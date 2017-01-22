@@ -1,0 +1,15 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+html{
+  background:black;
+  color:white;
+}
+
+.heading {
+  margin:0 auto;
+  background:white;
+  color:black;
+}

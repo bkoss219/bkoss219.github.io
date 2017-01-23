@@ -1,0 +1,31 @@
+$default-background:black;
+$default-text-color:white;
+$contrast-background:white;
+$contrast-text-color:black;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: $default-background;
+  color: $default-text-color;
+}
+
+.header {
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px;
+  background: $contrast-background;
+  color: $contrast-text-color;
+}
+
+.post {
+  width: 95%;
+  padding: 10px 0;
+  margin: 0 auto;
+  text-align: center;
+  background: $contrast-background;
+  color: $contrast-background;
+}

@@ -19,6 +19,8 @@ html{
 .post {
   width:95%;
   padding:10px 0;
+  margin:0 auto;
+  text-align:center;
   background:white;
   color:black;
 }

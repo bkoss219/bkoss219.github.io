@@ -2,6 +2,11 @@ $default-background:black;
 $default-text-color:white;
 $contrast-background:white;
 $contrast-text-color:black;
+$default-font:"Comic Sans MS", cursive, sans-serif;
+
+.blank0 {
+  font-family:$default-font;
+}
 
 * {
   margin: 0;
@@ -14,6 +19,7 @@ html {
 }
 
 .header {
+  @extend .blank0;
   margin: 0 auto;
   text-align: center;
   padding: 15px;

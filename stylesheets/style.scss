@@ -2,36 +2,40 @@ $default-background:black;
 $default-text-color:white;
 $contrast-background:white;
 $contrast-text-color:black;
-$default-font:"Comic Sans MS", cursive, sans-serif;
+$default-font:"Comic Sans MS",
+cursive,
+sans-serif;
+@mixin reset($m, $p, $align:null) {
+    margin: $m;
+    text-align: $align;
+    padding: $p;
+}
+
+@mixin blank($bckgrn, $txt) {
+    background: $bckgrn;
+    color: $txt;
+}
 
 .blank0 {
-  font-family:$default-font;
+    font-family: $default-font;
 }
 
 * {
-  margin: 0;
-  padding: 0;
+    @include reset(0, 0);
 }
 
 html {
-  background: $default-background;
-  color: $default-text-color;
+    @include blank($default-background, $default-text-color);
 }
 
 .header {
-  @extend .blank0;
-  margin: 0 auto;
-  text-align: center;
-  padding: 15px;
-  background: $contrast-background;
-  color: $contrast-text-color;
+    @extend .blank0;
+    @include reset(0 auto, 15px, center);
+    @include blank($contrast-background, $contrast-text-color);
 }
 
 .post {
-  width: 95%;
-  padding: 10px 0;
-  margin: 0 auto;
-  text-align: center;
-  background: $contrast-background;
-  color: $contrast-background;
+    @include reset(0 auto, 10px 0, center);
+    @include blank($contrast-background, $contrast-background);
+    width: 95%;
 }

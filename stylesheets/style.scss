@@ -2,9 +2,7 @@ $default-background:black;
 $default-text-color:white;
 $contrast-background:white;
 $contrast-text-color:black;
-$default-font:"Comic Sans MS",
-cursive,
-sans-serif;
+$default-font:"Comic Sans MS",cursive,sans-serif;
 @mixin reset($m, $p, $align:null) {
     margin: $m;
     text-align: $align;

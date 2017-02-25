@@ -34,6 +34,20 @@ html {
 
 .post {
     @include reset(0 auto, 10px 0, center);
-    @include blank($contrast-background, $contrast-background);
+    @include blank($contrast-background, $contrast-text-color);
     width: 95%;
+}
+.extLinks{
+    @include blank(lightblue, $contrast-text-color);
+    @include reset(0 auto, 10px 0, center);
+    width:75%;
+}
+a{
+    text-decoration:none;
+}
+a:link,a:active,a:visited{
+    color:black;
+}
+a:hover{
+    color:purple;
 }

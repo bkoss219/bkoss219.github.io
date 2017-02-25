@@ -21,7 +21,24 @@ html {
   text-align: center;
   padding: 10px 0;
   background: white;
-  color: white;
+  color: black;
   width: 95%; }
+
+.extLinks {
+  background: lightblue;
+  color: black;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 0;
+  width: 75%; }
+
+a {
+  text-decoration: none; }
+
+a:link, a:active, a:visited {
+  color: black; }
+
+a:hover {
+  color: purple; }
 
 /*# sourceMappingURL=style.scss.css.map */
